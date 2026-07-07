@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Berat Erol Çelik — Personal Brand</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background: linear-gradient(135deg, #0b0f1c 0%, #1a1f36 100%);
+      color: #e4e6f0;
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+    header {
+      text-align: center;
+      padding: 4rem 2rem 2rem;
+      background: rgba(255, 255, 255, 0.02);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+    header h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      background: linear-gradient(90deg, #60a5fa, #a78bfa);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.1rem;
+      color: #94a3b8;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+    section {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 1rem;
+      padding: 2.5rem;
+      margin-bottom: 2rem;
+      backdrop-filter: blur(4px);
+    }
+    section h2 {
+      font-size: 1.75rem;
+      font-weight: 600;
+      margin-bottom: 1.25rem;
+      color: #93c5fd;
+      border-left: 4px solid #818cf8;
+      padding-left: 1rem;
+    }
+    .bio p {
+      font-size: 1.1rem;
+      margin-bottom: 0.75rem;
+    }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1rem;
+    }
+    .skill-tag {
+      background: rgba(129, 140, 248, 0.12);
+      border: 1px solid rgba(129, 140, 248, 0.25);
+      border-radius: 0.75rem;
+      padding: 1rem 1.25rem;
+      text-align: center;
+      font-weight: 500;
+      transition: all 0.2s ease;
+    }
+    .skill-tag:hover {
+      background: rgba(129, 140, 248, 0.25);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 20px rgba(129, 140, 248, 0.15);
+    }
+    .goals ul {
+      list-style: none;
+    }
+    .goals li {
+      padding: 0.75rem 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      display: flex;
+      align-items: baseline;
+      gap: 0.75rem;
+    }
+    .goals li::before {
+      content: "▹";
+      color: #818cf8;
+      font-weight: bold;
+    }
+    .goals li:last-child {
+      border-bottom: none;
+    }
+    a {
+      color: #818cf8;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #64748b;
+      font-size: 0.9rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+    }
+    @media (max-width: 600px) {
+      header h1 { font-size: 2rem; }
+      section { padding: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Berat Erol Çelik</h1>
+    <p>Software Engineering Student · Founder @ Coddiom</p>
+  </header>
+
+  <div class="container">
+    <section class="bio">
+      <h2>Who I Am</h2>
+      <p>I'm a 22-year-old 4th-year <strong>Software Engineering</strong> student at <strong>Istanbul Aydın University</strong> and the founder of <strong>Coddiom</strong>, an AI startup building intelligent automation solutions. I live at the intersection of software engineering, artificial intelligence, and systems thinking.</p>
+    </section>
+
+    <section>
+      <h2>My Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-tag">LLMs &amp; Prompt Engineering</div>
+        <div class="skill-tag">AI Agents &amp; Automation</div>
+        <div class="skill-tag">n8n Orchestration</div>
+        <div class="skill-tag">Vibe Coding (Copilot / Claude Code)</div>
+        <div class="skill-tag">YOLO (Computer Vision)</div>
+        <div class="skill-tag">ROS2 (Robotics)</div>
+      </div>
+    </section>
+
+    <section class="goals">
+      <h2>My Future Goals</h2>
+      <ul>
+        <li>Become an <strong>R&amp;D Software Engineer</strong> building production-ready AI systems.</li>
+        <li>Scale <strong>Aqua-Adapt</strong> — an AI-driven digital twin for urban water management.</li>
+        <li>Grow <strong>PostByPrompt</strong> into a go-to platform for prompt-based content generation.</li>
+        <li>Contribute to open-source AI tools and mentor the next generation of AI engineers.</li>
+      </ul>
+    </section>
+  </div>
+
+  <footer>
+    &copy; 2026 Berat Erol Çelik &middot; Built for Samsung Innovation Campus — GenAI Lab 1
+  </footer>
+</body>
+</html>
